@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">Book Stack</header>
+    <div id="main-container">
+      <div id="container">
+        <div id="book-list">
+          <div class="card" style="display: none">
+            <div class="book-info">
+              <h3>Book Title</h3>
+              <p>Author: John Doe</p>
+              <p>Pages: 300</p>
+              <p>Status: Read</p>
+            </div>
+          </div>
+          <div id="button-container">
+            <button class="remove-btn" data-index="${index}">Remove</button>
+            <button class="remove-btn" data-read="${read}">Read</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="form-container">
+        <form id="book-form">
+          <li>
+            <label for="title">Title</label>
+            <input id="title" name="title" type="field" />
+          </li>
+          <li>
+            <label for="author">Author</label>
+            <input id="author" name="author" type="field" />
+          </li>
+          <li>
+            <label for="pages">Pages</label>
+            <input id="pages" name="pages" type="number" />
+          </li>
+          <li>
+            <label for="completed">Finished?</label>
+            <input id="completed" name="completed" type="checkbox" />
+          </li>
+          <li>
+            <label for="form-submit"></label>
+            <input id="form-submit" type="submit" />
+          </li>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
